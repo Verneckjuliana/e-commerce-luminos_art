@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Título -->
+    <title>Luminos Art</title>
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Keen Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"
+    />
+    <!-- JS Keen Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js" defer></script>
+
+<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS do projeto -->
+    <script src="js/slider.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png"width="90px" alt="Luminos Art"></a>
+        </div>
+            <div id="search-container">
+                    <form>
+                        <input type="text" id="search-input" placeholder="Qual produto você está procurando?" />
+                            <button class="search-button">
+                                <i class="fa-solid fa-search"></i>
+                            </button>
+                    </form>
+            </div>
+            <div class="cart-login-container">
+            <div class="login-container">
+                <section class="login">
+                    <a class="login-btn" href="login.html"><i class="fa-solid fa-user"></i> Entrar</a>
+                </section>
+            </div>
+            <div class="cart-container">
+                <section class="cart">
+                    <a class="cart-btn" href="cart.html"><i class="fa-solid fa-shop"></i> Carrinho</a>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <div class="menu-container">
+    <nav>
+      <ul>
+        <li><a href="acessorios.html"> ACESSÓRIOS</a></li>
+
+            <li><a href="velas.html"> VELAS <i class="fa-solid fa-caret-down"></i></a>
+            <ul>
+                <li><a href="#">Zodiac Candles</a></li>
+                <li><a href="#">Bubble Candles</a></li>
+            </ul>
+            </li>
+
+            <li><a href="homespray.html">HOME SPRAY <i class="fa-solid fa-caret-down"></i></a>
+            <ul>
+                <li><a href="#">Floral</a></li>
+                <li><a href="#">Cítrico</a></li>
+            </ul>
+            </li>
+
+            <li><a href="waxmelts.html">WAX MELTS</a></li>
+      </ul>
+    </nav>
+  </div>
+<div class="container">
+
+  
+    <div id="my-keen-slider" class="keen-slider">
+        <div class="keen-slider__slide number-slide1"><img src="./img/banner1.png" alt=""></div>
+        <div class="keen-slider__slide number-slide2"><img src="./img/banner2.png" alt=""></div>
+        <div class="keen-slider__slide number-slide3"><img src="./img/banner3.png" alt=""></div>
+        <div class="keen-slider__slide number-slide4"><img src="./img/banner4.png" alt=""></div>
+        <div class="keen-slider__slide number-slide5"><img src="./img/banner5.png" alt=""></div>
+        <div class="keen-slider__slide number-slide6"><img src="./img/banner6.png" alt=""></div>
+      </div>
+
+      <div class="wrapper">
+        <p class="balao-zap">Envie uma mensagem via Whatsapp</p>
+        <a id="fa-icon" href="https://wa.me/5519988696027?text=oi%2C+to+vendo+seu+site+" target="_blank">
+            <i class="contact-icon fab fa-whatsapp" style="color: #fff;"></i>
+            
+            
+        </a>	
+    </div>
+    <div class="novidades">
+        <h1>Novidades</h1>
+        
+        <div class="produtos-novidade">
+    
+            <section class="produto-novidade"> 
+                <a href="produto.html">
+                <i class="prod_nov"><img src="./img/Aries.png" alt=""></i></a>
+                <br><caption>Zodiac Candles</caption>
+            </section>
+    
+            <section class="produto-novidade">
+                <a href="produto.html">
+                <i class="prod_nov"><img src="./img/aquario.png" alt=""></i></a>
+                <br><caption>Zodiac Candles</caption>
+            </section>
+                
+            <section class="produto-novidade">
+                <a href="produto.html">
+                <i class="prod_nov"><img src="./img/libra.png" alt=""></i></a>
+                <br><caption>Zodiac Candles</caption>
+            </section>
+    
+            <section class="produto-novidade">
+                <a href="produto.html">
+                <i class="prod_nov"><img src="./img/virgem.png" alt=""></i></a>
+                <br><caption>Zodiac Candles</caption>
+            </section>
+    
+        </div>
+    
+    </div>
+    
+    <div class="qualidade">
+        <h1>Qualidade</h1>
+        <div class="qualidade-curiosidade">
+            <div class=".blog-img-curiosidade">
+                <img src="/img/bubble degrade.png" alt="blog-img-vela" style="border-radius: 20px;">
+            </div>
+        
+            <div class="qualidade-texto-curiosidade">
+                <h2>QUALIDADE É O QUE NOS DIFERENCIA!</h2>
+                <caption>Na Luminos Art, transformamos cera em luz, criando momentos mágicos e acolhedores para iluminar a sua vida.</caption>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+<footer class="footer">
+    <div class="newsletter">
+        <p>Fique por dentro das novidades!
+        Receba nossas novidades e promoções quentinhas no seu e-mail. Inscreva-se!</p>
+        <input type="text" placeholder="E-mail" class="inscricao-email"><button class="inscricao-btn">Inscrever-se</button>
+    </div>
+    <nav class="footer-navegacao">
+        <ul>Menu
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="velas.html">Velas</a></li>
+            <li><a href="homespray.html">Home Spray</a></li>
+            <li><a href="waxmelts.html">Wax Melts</a></li>
+        </ul>
+
+        <ul>Pagamentos
+            <li><a href="">Pix</a></li>
+            <li><a href="">Crédito</a></li>
+            <li><a href="">Débito</a></li>
+            <li><a href="">Boleto</a></li>
+        </ul>
+
+        <ul>Contatos
+            <li><a href="">Instagram</a></li>
+            <li><a href="">E-mail</a></li>
+            <li><a href="https://wa.me/5519988696027?text=oi%2C+to+vendo+seu+site+">Whatsapp</a></li>
+            <li><a href="">Facebook</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
