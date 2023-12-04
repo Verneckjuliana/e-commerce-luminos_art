@@ -2,22 +2,19 @@
 
 export function carregaProdutos (lista, gridProduto){
     lista.forEach(item => {
-    let html = ` <div class="product_card" id=${item.codigoProduto}>
-    <a href="produto1.html" id=${item.codigoProduto}>
-        <img class="product_image" src="${item.imagemProduto}" id=${item.codigoProduto}>
-        <div class="title_price">
-            <p>${item.nomeProduto}</p>
-            <h3>R$${item.preco},00</h3>
-            </div>
-    </a>
-</div>`
+    let html = `<section class="produto-novidade" id=${item.codigoProduto}> 
+                <a href="produto.html" id=${item.codigoProduto}>
+                <i class="prod_nov"><img src=${item.imagemProduto} id=${item.codigoProduto} alt=""></i></a>
+                <br><caption>${item.nomeProduto}</caption>
+                <br><caption>${item.preco}</caption>
+    </section>`
     gridProduto.innerHTML += html
     });
 }
 
 // Esta funcao adiciona o evento click nos cards de produtos. Ela captura o id do elemento e salva no local storage.
 export function handleClick(){
-    let cardProdtuos = document.querySelectorAll(".product_card")
+    let cardProdtuos = document.querySelectorAll(".produto-novidade")
         cardProdtuos.forEach(card => card.addEventListener('click', (e) => {
     let idProd = e.target.id
         localStorage.setItem("IdProd",idProd)
@@ -98,10 +95,10 @@ console.log(soma, quantidade)
 export function carrinhoCompras (ListaCarrinhoDeCompras,carrinho){
     ListaCarrinhoDeCompras.forEach(item => {
         console.log(item.quantidade * item.preco)
-        let html =`<li class="cart_item">
-        <img id="cart_img" src="${item.imagemProduto}">
-        <p id="name_product_cart">${item.nomeProduto}</p>
-        <div class="cart_item_container">
+        let html =`<li class="cart-content">
+        <img id="shop-description-img" src="${item.imagemProduto}">
+        <p id="shop-description">${item.nomeProduto}</p>
+        <div class="shop-quanty">
             <input type="number" name="" id="" value="${item.quantidade}">
             <span>R$${item.quantidade * item.preco}</span>
             <i class="bi bi-trash3"></i>

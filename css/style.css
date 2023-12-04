@@ -249,7 +249,7 @@ color: #0d8109;
 padding: 8px 21px;
 border: solid 1px #5e5e5e;
 border-radius: 10px;
-background-color:#fff;
+background-color:#000000;
 cursor: pointer;
 font-size: 15px;
 }
@@ -264,7 +264,7 @@ color: #fff;
 padding: 12px 22px;
 border: solid 1px #5e5e5e;
 border-radius: 12px;
-background-color:#fff;
+background-color:rgb(0, 0, 0)c0c;
 cursor: pointer;
 font-size: 18px;
 }
@@ -794,7 +794,7 @@ text-align: center;
 .footer {
   width: 100%;
   padding-top: 1em;
-  height: 275px;
+  height: 300px;
   text-align: center;
   background-color: rgba(255, 64, 156, 0.116);
   left: 0;
@@ -836,3 +836,67 @@ text-align: center;
 }
 
 /* Produto individual */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.produto_individual {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.img_produto_individual img {
+  max-width: 300px;
+  height: auto;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.product_info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0;
+  color: #333;
+}
+
+span {
+  display: block;
+  font-size: 20px;
+  color: #ff0015;
+  margin: 10px 0;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+}
+
+button {
+  background-color: #000000b6;
+  color: #fff;
+  padding: 7px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:rgba(255, 64, 156, 0.534) ;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #666;
+}
+
