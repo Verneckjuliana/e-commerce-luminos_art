@@ -448,7 +448,7 @@ color: #fff;
   padding: 10px 16px;
   border: solid 1px #5e5e5e;
   border-radius: 12px;
-  background-color:#fff;
+  background-color:#000000;
   cursor: pointer;
   font-size: 18px;
   margin-bottom: 50px;
@@ -553,6 +553,85 @@ color: #fff;
   .menu-container ul ul li a{
     display: block;
   }
+
+  .formulario {
+    background-color: rgba(212, 210, 210, 0.171);
+    border: 10px rgba(248, 6, 167, 0.082) solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5% 0 5%;
+}
+.formulario__campo {
+    background-color: var(--amarelo);
+    border: 5px var(--amarelo-hover) solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-cursiva);
+    margin: 0;
+    padding: 5% 2%;
+}
+
+.formulario__campo > h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.formulario__campo > label {
+    font-weight: 300;
+}
+
+.formulario__campo > div > input {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    display: block;
+    border: 2px var(--amarelo) solid;
+    border-radius: 10px;
+    margin: 5% 0;
+    padding: .5rem 3%;
+    transition: all 500ms;
+    width: 60%;
+}
+
+.formulario__campo > div > input:focus {
+    width: 90%;
+    outline: none;
+}
+
+.formulario__campo > div > input:valid {
+    border: 2px var(--verde) solid;
+}
+.formulario__campo > div > input:invalid {
+    border: 2px var(--vermelho) solid;
+}
+.formulario__campo > div > input:not(:focus) {
+    border: 2px var(--amarelo) solid;
+}
+
+.formulario__campo > div > select {
+    appearance: none;
+    background: white;
+    border: 2px var(--amarelo-hover) solid;
+    border-radius: 10px;
+    padding: 3% 5%;
+}
+
+.formulario > button {
+    border: 1px rgba(248, 6, 167, 0.082);
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: var(--fonte-cursiva);
+    padding: 2vh 0;
+    transition: 500ms;
+}
+.formulario > button:hover {
+    background-color: rgba(248, 6, 167, 0.644);
+    color: black;
+}
 
 /* Sub Menu */
 
@@ -899,4 +978,7 @@ p {
   font-size: 15px;
   color: #666;
 }
+
+
+
 
