@@ -6,7 +6,7 @@ import { carregaProdutos, handleClick} from "./funcoes.js"; // importa as funcoe
 let velaProdutos = ListadeProdutos.filter(produto => produto.categoria === "VELAS")
 
  // lista de produtos filtrada pela categoria home
-let container = document.querySelector(".produto-novidade") // Seleção do local onde o codigo HTML sera injetado
+let container = document.querySelector(".grid") // Seleção do local onde o codigo HTML sera injetado
 
 // função recebe uma lista de produtos e o local onde o HTML será injetado, que será exibida nas paginas
 // cartIndicator(listaCompras)

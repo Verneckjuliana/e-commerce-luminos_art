@@ -1,16 +1,16 @@
 import { ListadeProdutos } from "./dados.js" // importa o catalogo de produtos
-import { carregaProdutos, cartIndicator, handleClick} from "./funcoes.js"; // importa as funcoes que serao executadas na pagina home
+import { carregaProdutos, handleClick} from "./funcoes.js"; // importa as funcoes que serao executadas na pagina home
 
 //let listaCompras = JSON.parse(localStorage.getItem("carrinho"))
 
-let homeProducts = ListadeProdutos.filter(produto =>  produto.mostrarNaHome == true)
+let homesprayProdutos = ListadeProdutos.filter(produto => produto.categoria === "HOME SPRAY")
 
  // lista de produtos filtrada pela categoria home
 let container = document.querySelector(".grid") // Seleção do local onde o codigo HTML sera injetado
 
 // função recebe uma lista de produtos e o local onde o HTML será injetado, que será exibida nas paginas
 // cartIndicator(listaCompras)
-carregaProdutos(homeProducts,container);
+carregaProdutos(homesprayProdutos,container);
 handleClick() // adiciona o click nos cards de produto
 
 // let indicator = document.querySelector(".cart-item-qtd")

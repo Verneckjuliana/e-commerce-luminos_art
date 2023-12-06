@@ -38,4 +38,16 @@ export const ListadeProdutos = [
         categoria:"VELAS",
         mostrarNaHome: true
     },
+
+    {
+        codigoProduto: 5,
+        nomeProduto:"Ecobag",
+        preco: 25.00,
+        imagemProduto: "./img/ecobag.png",
+        descricaoProduto: "Ecobag",
+        categoria:"ACESSORIOS",
+        mostrarNaHome: true
+    },
+
+
 ]
