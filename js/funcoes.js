@@ -6,7 +6,7 @@ export function carregaProdutos (lista, gridProduto){
                 <a href="produto.html" id=${item.codigoProduto}>
                 <i class="prod_nov"><img src=${item.imagemProduto} id=${item.codigoProduto} alt=""></i></a>
                 <br><caption>${item.nomeProduto}</caption>
-                <br><caption>${item.preco}</caption>
+                <br><caption>R$${item.preco},00</caption>
     </section>`
     gridProduto.innerHTML += html
     });
